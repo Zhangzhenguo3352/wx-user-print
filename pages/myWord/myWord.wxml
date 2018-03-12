@@ -1,0 +1,71 @@
+<!--pages/myWord/myWord.wxml-->
+<view class='type'>
+	<view><image src='../../image/word1.png'></image><text>Word</text></view>
+	<view><image src='../../image/excel.png'></image><text>Excel</text></view>
+	<view><image src='../../image/ppt1.png'></image><text>PPT</text></view>
+	<view><image src='../../image/pdf1.png'></image><text>PDF</text></view>
+	<view><image src='../../image/wx.png'></image><text>微信</text></view>
+	<view><image src='../../image/QQ.png'></image><text>QQ</text></view>
+</view>
+<view style='padding-top:130rpx;'>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+	<view class='item'>
+		<text class='name'>开发合同.pdf</text>
+		<text class='time'>2017-08-01 16:00</text>
+		<text class='size'>150K</text>
+	</view>
+</view>

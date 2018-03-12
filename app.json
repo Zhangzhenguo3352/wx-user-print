@@ -1,0 +1,60 @@
+{
+        "pages": [
+                "pages/index/index",
+                "pages/my/my",
+                "pages/bindPhone/bindPhone",
+                "pages/notPrint/notPrint",
+                "pages/printSet/printSet",
+                "pages/getPrinter/getPrinter",
+                "pages/getFile/getFile",
+                "pages/printPayOk/printPayOk",
+                "pages/findPrint/findPrint",
+                "pages/about/about",
+                "pages/wallet/wallet",
+                "pages/record/record",
+                "pages/myWord/myWord",
+                "pages/recharge/recharge",
+                "pages/printRecord/printRecord",
+                "pages/printRecordDetail/printRecordDetail",
+                "pages/fileUpload/fileUpload",
+                "pages/pcUpload/pcUpload",
+                "pages/map/map",
+		            "pages/printPay/printPay",
+                "pages/test/test"
+                
+                
+                
+        ],
+        "window": {
+                "backgroundTextStyle": "light",
+                "navigationBarBackgroundColor": "#f05b47",
+                "navigationBarTitleText": "印之梦",
+                "navigationBarTextStyle": "white"
+        },
+        "tabBar": {
+                "color": "#b1b3c2",
+                "selectedColor": "#f25a4d",
+                "backgroundColor": "#ffffff",
+                "position": "bottom",
+                "list": [
+                        {
+                                "pagePath": "pages/index/index",
+                                "text": "我的文档",
+                                "iconPath": "image/myDoc.png",
+                                "selectedIconPath": "image/myDoc_active.png"
+                        },
+                        {
+                                "pagePath": "pages/getFile/getFile",
+                                "text": "取件付款",
+                                "iconPath": "image/yun.png",
+                                "selectedIconPath": "image/yun_active.png"
+                        },
+                        {
+                                "pagePath": "pages/map/map",
+                                "text": "找打印机",
+                                "iconPath": "image/dayin.png",
+                                "selectedIconPath": "image/dayin_active.png"
+                        }
+                ]
+        }
+}

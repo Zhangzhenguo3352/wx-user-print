@@ -1,0 +1,70 @@
+<!--pages/notPrint/notPrint.wxml-->
+<view wx:if="{{array.length!==0}}">
+
+    <view class='header' bindtap='linkPrintSetting' data-sbId="{{print.printer_id}}">
+        <text>统一设置</text>
+        <image src='../../image/rightArrow.png'></image>
+    </view>
+
+    <view class='printRecord'>
+
+        <view class='item' wx:for="{{array}}">
+            <view class='info' style='{{item.txtStyle}}' data-index="{{index}}" bindtouchstart='touchS' bindtouchmove='touchM' bindtouchend='touchE'>
+                <view class='name'>
+                    <text class='namse'>{{item.title}}</text>
+                    <text>(共{{item.pages}}页)</text>
+                </view>
+                <text class='price'>{{item.total_price}}元</text>
+                <view class='printAttr' bindtap='linkPrintSet' data-item='{{item}}' data-sbId="{{print.printer_id}}">
+                    <image src='../../image/set_red.png'></image>
+                    {{item.attr_str}}
+                </view>
+                <view class='printNum'>
+                    <image catchtap='reduceNum' data-item="{{item}}" id='minusBtn' src='../../image/minus_grey.png'></image>
+                    {{item.num}}
+                    <image catchtap='reduce' data-item="{{item}}" id='plusBtn' src='../../image/plus.png'></image>
+                </view>
+            </view>
+            <view class='delBtn' data-id='{{item.pi_id}}' style='width:{{delBtnWidth}}rpx' bindtap='delFile'>删除</view>
+        </view>
+    </view>
+
+    <view class='printerInfo'>
+        <view class='title'>费用估算
+            <text>不同终端价格可能不同</text>
+        </view>
+        <view class='addressInfo' bindtap='linkGetPrinter'>
+            <view>
+                <image src='../../image/dingwei.png'></image>
+            </view>
+            <view class='address'>
+                <view>{{print.printer_address}}</view>
+                <view>距您
+                    <text class='distance'>{{print.distance}}</text>公里</view>
+            </view>
+            <view class='price'>{{print.total_money}}元</view>
+            <view>
+                <image src='../../image/rightArrow.png'></image>
+            </view>
+        </view>
+        <view class='line'>
+            <image src='../../image/addressLine.png'></image>
+        </view>
+    </view>
+
+    <view class='confirm_btn'>
+        <text wx:if='{{onShow}}' class='btn' bindtap='linkRecharge'>您的余额不足({{print.total_money}}元)，请充值</text>
+        <text wx:if='{{!onShow}}' class='btn' bindtap='upPrint'>提交打印</text>
+    </view>
+
+
+    <view class='notice'>
+        可在任意打印机上取件付款
+    </view>
+</view>
+
+<view class='null'  wx:if="{{array.length===0}}">
+    打印列表为空，快去添加打印吧！
+
+    <button bindtap='backHome'>返回首页</button>
+</view>

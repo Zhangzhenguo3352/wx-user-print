@@ -1,0 +1,19 @@
+<!--pages/fileUpload/fileUpload.wxml-->
+<view class='content'>
+  <view class='item' bindtap='cameraImg'>
+    <image src='../../image/upfile1.png'></image>
+    <text>拍照</text>
+  </view>
+  <view class='item' bindtap='albumImg'>
+    <image src='../../image/upfile2.png'></image>
+    <text>相册</text>
+  </view>
+  <view class='item' bindtap='linkMyWord'>
+    <image src='../../image/upfile3.png'></image>
+    <text>本机上传</text>
+  </view>
+  <view class='item' bindtap='linkPcUpload'>
+    <image src='../../image/upfile4.png'></image>
+    <text>电脑上传</text>
+  </view>
+</view>

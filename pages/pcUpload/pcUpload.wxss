@@ -1,0 +1,50 @@
+/* pages/pcUpload/pcUpload.wxss */
+
+page {
+  font-size: 24rpx;
+  color: rgb(51, 51, 51);
+}
+
+.btn {
+  display: block;
+  height: 78rpx;
+  line-height: 78rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  background: rgb(255, 255, 255);
+  border: 1rpx solid rgb(235, 235, 235);
+  border-radius: 10rpx;
+}
+
+.content {
+  text-align: center;
+}
+
+.content .logo {
+  margin-top: 150rpx;
+}
+
+.content .logo image {
+  width: 271rpx;
+  height: 81rpx;
+}
+
+.content .title {
+  margin-top: 60rpx;
+}
+
+.content .pcLink {
+  margin-top: 36rpx;
+  color: rgb(66, 132, 206);
+}
+
+.content .copy_btn {
+  margin-top: 32rpx;
+}
+
+.copy_btn .btn {
+  width: 600rpx;
+  margin: 0rpx auto;
+  font-weight: 700;
+}

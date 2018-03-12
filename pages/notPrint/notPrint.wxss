@@ -1,0 +1,252 @@
+/* pages/notPrint/notPrint.wxss */
+
+page {
+    font-size: 24rpx;
+    color: rgb(51, 51, 51);
+}
+
+.header {
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 2rpx solid rgb(245, 245, 245);
+}
+
+.header text {
+    padding-left: 30rpx;
+    color: rgb(65, 133, 206);
+    box-sizing: border-box;
+}
+
+.header image {
+    width: 40rpx;
+    height: 40rpx;
+    float: right;
+    margin: 10rpx 20rpx 0rpx 0rpx;
+}
+
+.printRecord {
+    background: rgb(255, 255, 255);
+}
+
+.printRecord .item {
+    border-bottom: 1rpx solid rgb(247, 247, 247);
+    width: 100%;
+    position: relative;
+    height: 190rpx;
+}
+
+.printRecord .item:last-child {
+    border-bottom: 0rpx none;
+}
+
+.item .info {
+    position: relative;
+    vertical-align: middle;
+    padding: 40rpx 30rpx;
+    overflow: hidden;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.item .delBtn {
+    text-align: center;
+    width: 124rpx;
+    font-size: 32rpx;
+    background: rgb(240, 91, 71);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0px;
+    height: 190rpx;
+    line-height: 190rpx;
+    z-index: 1;
+    top: 0;
+}
+
+.item .name {
+    display: block;
+    margin-right: 140rpx;
+    height: 32rpx;
+    width: 100%;
+}
+
+.item .name text {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.item .name .namse {
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.item .price {
+    position: absolute;
+    top: 40rpx;
+    right: 30rpx;
+    color: rgb(241, 92, 72);
+    font-size: 30rpx;
+}
+
+.item .printAttr {
+    display: inline-block;
+    height: 44rpx;
+    line-height: 44rpx;
+    margin-top: 40rpx;
+    padding: 0rpx 20rpx;
+    font-size: 22rpx;
+    color: rgb(240, 91, 71);
+    border: 1rpx solid rgb(240, 91, 71);
+    border-radius: 6rpx;
+}
+
+.item .printAttr image {
+    width: 30rpx;
+    height: 30rpx;
+    color: rgb(166, 166, 166);
+    float: left;
+    margin: 7rpx 20rpx 0rpx 0rpx;
+}
+
+.item .printNum {
+    display: inline-block;
+    position: absolute;
+    bottom: 40rpx;
+    right: 30rpx;
+    width: 200rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    border: 1rpx solid rgb(217, 217, 217);
+    border-radius: 5rpx;
+    text-align: center;
+}
+
+.printNum image {
+    width: 30rpx;
+    height: 30rpx;
+    margin: 10rpx 0rpx;
+}
+
+.printNum #minusBtn {
+    float: left;
+    margin-left: 10rpx;
+}
+
+.printNum #plusBtn {
+    float: right;
+    margin-right: 10rpx;
+}
+
+.printerInfo {
+    margin-top: 100rpx;
+}
+
+.printerInfo .title {
+    padding: 30rpx;
+    border-bottom: 1rpx solid rgb(235, 235, 235);
+    color: rgb(102, 102, 102);
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.title text {
+    color: rgb(166, 166, 166);
+    margin-left: 25rpx;
+}
+
+.printerInfo .addressInfo {
+    display: table;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.addressInfo > view {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.addressInfo > view:first-child image {
+    width: 32rpx;
+    height: 41rpx;
+    margin: 0rpx 30rpx;
+}
+
+.addressInfo > view:last-child image {
+    width: 41rpx;
+    height: 41rpx;
+    margin: 0rpx 30rpx;
+}
+
+.addressInfo .address {
+    padding: 20rpx 0rpx;
+}
+
+.addressInfo .address view:last-child {
+    margin-top: 20rpx;
+}
+
+.addressInfo .address .distance {
+    color: rgb(240, 91, 71);
+}
+
+.addressInfo .price {
+    width: 120rpx;
+    text-align: right;
+    color: rgb(240, 91, 71);
+    font-size: 28rpx;
+}
+
+.printerInfo .line {
+    overflow: hidden;
+}
+
+.printerInfo .line image {
+    width: 100%;
+    height: 23rpx;
+}
+
+.btn {
+    display: block;
+    height: 78rpx;
+    line-height: 78rpx;
+    font-size: 28rpx;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255);
+    border: 1rpx solid rgb(235, 235, 235);
+    border-radius: 10rpx;
+}
+
+.confirm_btn {
+    margin-top: 50rpx;
+}
+
+.confirm_btn .btn {
+    width: 600rpx;
+    margin: 0rpx auto;
+    font-weight: 700;
+    background: rgb(240, 91, 71);
+    color: rgb(255, 255, 255);
+    border-color: rgb(240, 91, 71);
+}
+
+.notice {
+    text-align: center;
+    color: rgb(166, 166, 166);
+    font-size: 22rpx;
+    margin-top: 20rpx;
+}
+
+.null{
+    height: 700rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #cccccc;
+    line-height: 700rpx;
+}
+.null button{
+    width: 60%;
+}

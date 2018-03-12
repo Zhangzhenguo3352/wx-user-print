@@ -1,0 +1,15 @@
+/* pages/getFile/getFile.wxss */
+
+view{
+	width: 100%;
+	height: 100%;
+	padding-top: 400rpx;
+	box-sizing: border-box
+}
+button{
+	background: red;
+	color: white;
+	width: 500rpx;
+	text-align: center;
+	line-height: 80rpx;
+}

@@ -1,0 +1,63 @@
+.myItem{
+	background: white;
+	height: 88rpx;
+	line-height: 88rpx;
+	font-size: 24rpx;
+	color: rgb(77, 77, 77);
+	padding: 0 30rpx 0 34rpx;
+}
+.itemContent{
+	position: relative;
+	height: 43px;
+}
+.itemContent image{
+	width: 18px;
+	height: 17px;
+	vertical-align: middle;
+	margin-right: 13px;
+	margin-top: -2px;
+}
+.itemContent .arrow{
+	float: right;
+	margin: 0;
+	position: absolute;
+	top: 15px;
+	bottom: 0;	
+	right: 0;
+}
+
+
+
+.fileListContent {
+  width:95%;
+  margin: 0 auto;
+  
+}
+.fileListContent .title{
+  padding:20rpx;
+}
+.fileListContent .fileListBox{
+  min-height: 100rpx;
+  width: 100%;
+  background-color: #fff;
+  margin: 20rpx 0 0 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.fileListBox .content{
+}
+.fileListBox .content .bor{
+  border-top: 1px solid #ccc;
+  padding:20rpx;
+}
+.fileListContent .progressBox{
+  display: flex;
+}
+.fileListContent .progressBox .float{
+  flex:1;
+}
+.fileListContent .progressBox .right{
+  width: 120rpx;
+  text-align: center;
+}
+

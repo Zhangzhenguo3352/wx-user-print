@@ -1,0 +1,14 @@
+<!--pages/wallet/wallet.wxml-->
+<view class='walletTitle'>
+	<view class='bg'>
+		<image src='../../image/walletBg.png'></image>
+	</view>
+	<view class='doc'>
+		<text>账户余额</text>
+		<text class='money'>{{userInfo.money}}元</text>
+	</view>
+</view>
+<view style='margin-top:15px'></view>
+<import src="../../template/navItem/navItem.wxml"/>
+<template is='navItem' data="{{linkUrl:recharge,text:'我要充值',imgSrc:'../../image/money.png',style:'border-bottom: 1px solid rgb(235, 235, 235)'}}"/>
+<template is='navItem' data="{{linkUrl:'../record/record',text:'交易记录',imgSrc:'../../image/jilu.png'}}"/>

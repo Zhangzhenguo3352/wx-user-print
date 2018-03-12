@@ -1,0 +1,14 @@
+<!--pages/map/map.wxml-->
+<view class='title'>
+	<view class='left'>
+		<image class='people'  src='../../image/iconTitle_white.png' bindtap='jumpMy'></image>
+	</view>
+	<view class='right'>
+		<view bindtap='swithcTab' data-current='0' class="{{current==0?'tabBarAct':''}}">普通打印</view>
+		<view bindtap='swithcTab' data-current='1' class="{{current==1?'tabBarAct':''}}">彩色打印</view>
+		<view bindtap='swithcTab' data-current='2' class="{{current==2?'tabBarAct':''}}">照片打印</view>
+	</view>
+  
+</view>
+
+ <map style='height:{{winHeight-44}}px'  id="map" polyline="{{polyline}}" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}"   markers="{{markers}}" controls="{{controls}}" show-location  bindcontroltap='refresh' bindmarkertap='clickPrint' bindcallouttap='clickPrint' bindregionchange="bindregionchange" ></map> 

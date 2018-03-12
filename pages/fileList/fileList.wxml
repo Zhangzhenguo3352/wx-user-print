@@ -1,0 +1,25 @@
+<!-- <import src="../../template/navItem/navItem.wxml"/>
+<template is='fileList' /> -->
+
+<view class="fileListContent" >
+    <view class="fileListBox" wx:for="{{fileList}}" wx:key="{{index}}">
+      <view class="content">
+        <view class="title">
+          <text>{{item.title}}</text>
+          <!-- <image src="{{}}"/> -->
+        </view>
+        <view class="bor">
+          <view>
+            <text class="photo">类型：{{item.type}} </text><text class="page">规格：{{item.specification}}</text>
+          </view>
+          <view class="time">时间：{{item.time}}</view>
+        </view>
+        <view class="padd20">
+          <view class="progressBox">
+            <progress percent="{{item.progress}}" class="float"/>
+            <text class="right">{{item.progressText == 100 ? '完成' : item.progressText+'%'}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

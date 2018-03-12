@@ -1,0 +1,101 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wxdb0b83006fe07fa6",
+	"projectname": "ddd",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "打印记录列表",
+					"pathName": "pages/printRecord/printRecord",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "打印记录详情",
+					"pathName": "pages/printRecordDetail/printRecordDetail",
+					"query": "id=10001"
+				},
+				{
+					"id": -1,
+					"name": "消费记录",
+					"pathName": "pages/record/record",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "提交打印",
+					"pathName": "pages/notPrint/notPrint",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "寻找打印机",
+					"pathName": "pages/map/map",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "账户充值",
+					"pathName": "pages/recharge/recharge",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "找打印机",
+					"pathName": "pages/map/map",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "打印设置",
+					"pathName": "pages/printSet/printSet",
+					"query": "isall=0&id=3"
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "绑定手机号",
+					"pathName": "pages/bindPhone/bindPhone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "上传文件",
+					"pathName": "pages/fileUpload/fileUpload",
+					"query": ""
+				},
+				{
+					"id": 11,
+					"name": "ttt",
+					"pathName": "pages/printPay/printPay",
+					"query": "id=1956"
+				}
+			]
+		}
+	}
+}

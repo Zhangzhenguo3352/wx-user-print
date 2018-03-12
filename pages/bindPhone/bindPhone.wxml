@@ -1,0 +1,18 @@
+<!--pages/bindPhone/bindPhone.wxml-->
+<view class='bindPhone-box'  wx-if="{{!isShow}}">
+	<view class='phoneInput'>
+		<input type='number' bindinput='getMobile' confirm-type='done' placeholder-style='color:rgb(140,140,140)' placeholder='请输入手机号' />
+	</view>
+	<view class='phoneInput'>
+		<input type='text' bindinput='getCode' placeholder-style='color:rgb(140,140,140)' placeholder='请输入验证码' />
+		<button  catchtap='sendCode' type='warn' disabled="{{disable}}">{{codeText}}</button>
+	</view>
+	<button bindtap='bindPhone' >绑定手机</button>
+</view>
+
+<view class='bind' wx-if="{{isShow}}">
+	<button  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+	<image src='/image/wxs.png'></image>
+	微信用户快速绑定</button>
+	<view bindtap='inpuBind'>输入手机号码绑定</view>
+</view>

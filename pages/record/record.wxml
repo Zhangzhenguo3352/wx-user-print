@@ -1,0 +1,9 @@
+<!--pages/record/record.wxml-->
+<view class='item' wx:for="{{list}}" wx:if="{{list.length>0}}">
+	<text class='type'>充值</text>
+	<text class='money'>+10元</text>
+	<text class='time'>2017-08-01 16:00</text>
+</view>
+<view class='noRecord' wx:if="{{list.length==0}}">
+	消费记录为空
+</view>

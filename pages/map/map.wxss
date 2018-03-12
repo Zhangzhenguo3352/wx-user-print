@@ -1,0 +1,40 @@
+/* pages/map/map.wxss */
+map{
+	width: 100%;
+	height: 100%;
+}
+
+
+.title{
+	height: 78rpx;
+	line-height: 78rpx;
+	text-align: center;
+	background: rgb(240, 91, 71);
+	border-bottom:2px solid #c14939;
+}
+.title .left{
+	width: 15%;
+	height: 100%;
+	float: left
+}
+.title .left image{
+	width: 40rpx;
+	height: 40rpx;
+}
+.title .right{
+	width: 85%;
+	height: 100%;
+	font-size: 24rpx;
+	color: #fad9d4;
+	float: left
+}
+.title .right view{
+	width: 33.33%;
+	height: 100%;
+	display: inline-block;
+}
+.tabBarAct{
+	border-bottom:2px solid white;
+	font-size: 26rpx;
+	color: white;
+}

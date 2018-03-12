@@ -1,0 +1,22 @@
+<!--pages/recharge/recharge.wxml-->
+<view style='background:white;padding: 50rpx;'>
+        <view class='title'>
+                <text>账户余额</text>
+                <text class='money'>{{userInfo}}元</text>
+        </view>
+        <text>账户充值</text>
+        <view class='selectMoney'>
+                <button class='{{money==100?"active":""}}' data-money='100' bindtap='switchMoney'>100元</button>
+                <button class="{{money==50?'active':''}}" data-money='50' bindtap='switchMoney'>50元</button>
+                <button class="{{money==30?'active':''}}" data-money='30' bindtap='switchMoney'>30元</button>
+                <button class="{{money==20?'active':''}}" data-money='20' bindtap='switchMoney'>20元</button>
+                <button class="{{money==10?'active':''}}" data-money='10' bindtap='switchMoney'>10元</button>
+        </view>
+</view>
+<view class='foot'>
+        <label>
+                <radio checked color='red' /> 已阅读并同意
+        </label>
+        <navigator url='../index/index'>《充值协议》</navigator>
+        <button bindtap='recharge'>充值</button>
+</view>

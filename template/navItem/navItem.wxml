@@ -1,0 +1,36 @@
+<template name='navItem'>
+	<navigator  url='{{linkUrl}}'>
+		<view class='myItem'>
+			<view class='itemContent' style='{{style}}'>
+				<image src='{{imgSrc}}'></image>
+				{{text}}
+				<image class='arrow' src='../../image/rightArrow.png'></image>
+			</view>
+		</view>
+	</navigator>
+</template>
+
+<!-- 上传文件列表组件 -->
+<!-- <template name='fileList'>
+  <view class="fileListContent" >
+    <view class="fileListBox">
+      <view class="content">
+        <view class="title">
+          <text>mmmmmmm.jpg</text>
+        </view>
+        <view class="bor">
+          <view>
+            <text class="photo">类型：六寸照片 </text><text class="page">规格：单面</text>
+          </view>
+          <view class="time">时间： 2018-01-10 17:21:41</view>
+        </view>
+        <view class="padd20">
+          <view class="progressBox">
+            <progress percent="20" show-info="{{false}}" class="float"/>
+            <text class="right">完成</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template> -->

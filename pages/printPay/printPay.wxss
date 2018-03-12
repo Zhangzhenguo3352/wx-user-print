@@ -1,0 +1,137 @@
+/* pages/printPay/printPay.wxss */
+
+page {
+	font-size: 24rpx;
+	color: rgb(51, 51, 51);
+}
+.printOrder {
+	background: rgb(255, 255, 255);
+  margin-bottom: 2rpx;
+	font-size: 26rpx;
+}
+.printOrder .item {
+  height: 80rpx;
+  line-height: 80rpx;
+	padding: 0rpx 30rpx;
+}
+.printOrder .item text {
+	color: rgb(166, 166, 166);
+}
+
+.printRecord {
+	background: rgb(255, 255, 255);
+  margin-bottom: 180rpx;
+}
+.printRecord .item {
+  position: relative;
+	background: rgb(255, 255, 255);
+	padding: 40rpx 30rpx;
+	border-bottom: 1rpx solid rgb(247, 247, 247);
+}
+.printRecord .item:last-child {
+	border-bottom: 0rpx none;
+  height: 80rpx;
+  line-height: 80rpx;
+	padding: 0rpx 30rpx;
+}
+.item .name {
+  display: inline-block;
+  margin-right: 140rpx;
+}
+.item .price {
+  position: absolute;
+  top: 40rpx;
+  right: 30rpx;
+	color: rgb(241, 92, 72);
+}
+.item .printAttr {
+  display:block;
+	margin-top: 50rpx;
+	font-size: 22rpx;
+	color: rgb(166, 166, 166);
+}
+.item .copyNum {
+  position: absolute;
+  bottom: 40rpx;
+  right: 30rpx;
+	font-size: 22rpx;
+}
+.item .totalPrice {
+  display: block;
+  text-align: right;
+  font-size: 28rpx;
+}
+.item .totalPrice text {
+	color: rgb(241, 92, 72);
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+	background: rgb(255, 255, 255);
+}
+
+.footer .accountInfo , .footer .accountError {
+  height: 72rpx;
+  line-height: 72rpx;  
+}
+
+.accountInfo image {
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+  margin: 16rpx 20rpx 0rpx 30rpx;
+}
+
+.accountInfo text {
+	color: rgb(32, 38, 34);  
+}
+
+.accountError text {
+  padding-left: 30rpx;
+  color: rgb(240, 91, 71);
+}
+
+.accountError image {
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  margin: 16rpx 20rpx 0rpx 0rpx;
+}
+
+.footer .payBtn {
+  border-top: 2rpx solid rgb(247, 247, 247);
+  height: 98rpx;
+  line-height: 98rpx;
+	font-size: 26rpx;
+}
+
+.payBtn text {
+  display: inline-block;
+  height: 100%;
+}
+
+.payBtn text:first-child {
+  padding-left: 30rpx;
+  color: rgb(240, 91, 69);
+}
+
+.payBtn text:last-child {
+  width: 290rpx;
+  position: absolute;
+  right: 0rpx;
+  color: rgb(255, 255, 255);
+  background: rgb(240, 91, 71);
+  text-align: center;
+}
+
+
+.payDisabled text:first-child {
+  color: rgb(216, 216, 216);
+}
+
+.payDisabled text:last-child {
+  background: rgb(216, 216, 216);
+}

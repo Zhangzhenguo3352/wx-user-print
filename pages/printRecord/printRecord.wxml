@@ -1,0 +1,12 @@
+<!--pages/printRecord/printRecord.wxml-->
+<view class='printRecord' wx-if="{{printList.length>0}}">
+	<view class='item' wx:for="{{printList}}" data-id='{{item.print_id}}' bindtap='linkPrintRecordDetail'>
+		<text class='name'>{{item.info}}</text>
+		<text class='price'>{{item.total_price}}元</text>
+		<text class='time'>{{item.create_time}}</text>
+	</view>
+</view>
+
+<view class='noPrint' wx-if="{{printList.length==0}}">
+	打印记录为空
+</view>

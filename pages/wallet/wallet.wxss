@@ -1,0 +1,33 @@
+/* pages/wallet/wallet.wxss */
+@import "../../template/navItem/navItem.wxss";
+.walletTitle{
+	height: 189px;
+	width:100%;
+	background: rgb(240, 91, 71);
+}
+.walletTitle view{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.walletTitle .doc{
+	padding-top: 54px;
+	padding-left: 17px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: rgb(252, 252, 252)
+}
+.walletTitle .doc .money{
+	font-size: 18px;
+	margin-top: 24px;
+	display: block
+}
+.walletTitle .bg{
+	text-align: right
+}
+.walletTitle .bg image{
+	width: 257rpx;
+	height: 251rpx;
+	margin-top: 56rpx;
+	margin-right: 30rpx;
+}

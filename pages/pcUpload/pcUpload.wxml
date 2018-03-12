@@ -1,0 +1,14 @@
+<!--pages/pcUpload/pcUpload.wxml-->
+<view class='content'>
+  <view class='logo'><image src='../../image/logo.png'></image></view>
+  <view class='title'>
+    <text>请用电脑访问下面网址并上传</text>
+  </view>
+  <view class='pcLink'>
+    <text>www.yinzhimeng.com.cn</text>
+  </view>
+  <view class='copy_btn'>
+    <text class='btn' bindtap='setClip'>复制链接</text>
+  </view>
+</view>
+

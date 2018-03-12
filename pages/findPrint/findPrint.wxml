@@ -1,0 +1,11 @@
+<!--pages/findPrint/findPrint.wxml-->
+<view class='header'>
+  <view class='item'><image class='people' bindtap='linkMy' src='../../image/iconTitle_white.png'></image></view>	
+  <view class='item'>普通打印</view>
+  <view class='item .active'>彩色打印</view>
+  <view class='item'>照片打印</view>
+</view>
+
+<view class='content'>
+  <view></view>
+</view>

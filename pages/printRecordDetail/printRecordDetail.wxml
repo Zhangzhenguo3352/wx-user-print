@@ -1,0 +1,21 @@
+<!--pages/printRecordDetail/printRecordDetail.wxml-->
+<view class='printOrder'>
+	<view class='item'>
+    订单编号：<text>{{detail.sn}}</text>
+  </view>
+	<view class='item'>
+    订单金额：<text>{{detail.pay_money}}元</text>
+  </view>
+	<view class='item'>
+    订单时间：<text>{{detail.paid_time}}</text>
+  </view>
+</view>
+
+<view class='printRecord'>
+	<view class='item' wx:for="{{detail.print_item}}">
+		<text class='name'>{{item.title}}(共{{item.pages}}页，<text>{{item.unprint_page}}页未打印</text>)</text>
+		<text class='price'>{{item.total_price}}元</text>
+		<text class='printAttr'>{{item.attr_str}}</text>
+		<text class='copyNum'>{{item.num}}份</text>
+	</view>
+</view>

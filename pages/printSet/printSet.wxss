@@ -1,0 +1,111 @@
+/* pages/printSet/printSet.wxss */
+
+page {
+	font-size: 24rpx;
+	color: rgb(51, 51, 51);
+}
+
+.printer {
+  background: rgb(255, 255, 255);
+}
+
+.printer > view {
+  padding: 30rpx 0rpx;
+  margin: 0rpx 30rpx;
+  border-bottom: 1rpx solid rgb(235, 235, 235);
+}
+.printer > view:last-child {
+  border-bottom: 0rpx none;
+}
+
+.printer > view .title {
+  margin-bottom: 30rpx;
+	color: rgb(102, 102, 102);
+}
+
+.item_box {
+  overflow: hidden;
+}
+
+.item_box .item {
+  float: left;
+  margin-right: 20rpx;
+  background: rgb(235, 235, 235);
+  border: 1rpx solid rgb(235, 235, 235);
+  border-radius: 5rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0rpx 32rpx;
+}
+
+.item_box .active {
+  border-color: rgb(240, 91, 71);
+  background: rgb(255, 255, 255);
+}
+
+.print_num .item_box .printNum {
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 1rpx solid rgb(217, 217, 217);
+  border-radius: 5rpx;
+  text-align: center;
+}
+.printNum image {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 10rpx 0rpx;
+}
+.printNum #minusBtn {
+  float: left;
+  margin-left: 10rpx;
+}
+.printNum #plusBtn {
+  float: right;
+  margin-right: 10rpx;
+}
+
+.page_num .item_box {
+  overflow: hidden;
+}
+.page_num .item_box input , .page_num .item_box text {
+  float: left;
+  text-align: center;
+}
+.page_num .item_box input {
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 1rpx solid rgb(217, 217, 217);
+  border-radius: 5rpx;
+}
+.page_num .item_box text {
+  width: 80rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+}
+
+.btn {
+  display: block;
+  height: 78rpx;
+  line-height: 78rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  background: rgb(255, 255, 255);
+  border: 1rpx solid rgb(235, 235, 235);
+  border-radius: 10rpx;
+}
+
+.confirm_btn {
+  margin-top: 50rpx;
+}
+
+.confirm_btn .btn {
+  width: 600rpx;
+  margin: 0rpx auto;
+  font-weight: 700;
+  background: rgb(240, 91, 71);
+  color: rgb(255, 255, 255);
+  border-color: rgb(240, 91, 71);
+}

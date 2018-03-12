@@ -1,0 +1,13 @@
+<!--pages/printPayOk/printPayOk.wxml-->
+<view class='content'>
+  <view class='logo'><image src='../../image/payOk.png'></image></view>
+  <view class='title'>
+    <text>支付成功！</text>
+  </view>
+  <view class='pcLink'>
+    <text>请等待打印并取走您的文件</text>
+  </view>
+  <view class='back_btn'>
+    <text class='btn' bindtap='linkIndex'>返回首页</text>
+  </view>
+</view>

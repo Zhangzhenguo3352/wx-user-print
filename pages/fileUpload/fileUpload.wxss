@@ -1,0 +1,28 @@
+/* pages/fileUpload/fileUpload.wxss */
+.content {
+  width: 632rpx;
+  margin: 0 auto;
+  padding-top: 52rpx;
+}
+
+.content .item {
+  margin: 32rpx;
+  float: left;
+  position: relative;
+}
+
+.content .item image {
+  width: 252rpx;
+  height: 250rpx;
+}
+
+.content .item text {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0rpx;
+  bottom: 56rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: rgb(51, 51, 51);
+}

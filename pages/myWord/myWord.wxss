@@ -1,0 +1,56 @@
+/* pages/myWord/myWord.wxss */
+.type{
+	background: rgb(255, 255, 255);
+	padding: 20rpx 0rpx 22rpx 0rpx;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgb(247, 247, 247);
+	height: 130rpx;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.type view{
+	float: left;
+	width: 16.6%;
+	text-align: center
+}
+.type::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.type view:last-child{
+	margin-right: 0;
+}
+.type view image{
+	width: 50rpx;
+	height: 55rpx;
+}
+.type view text{
+	font-size: 20rpx;
+	color: #808080;
+	display: block;
+	margin-top: 14rpx;
+}
+.item{
+	background: rgb(255, 255, 255);
+	padding: 30rpx;
+	border-bottom: 1px solid rgb(247, 247, 247)
+}
+.item .name{
+	font-size: 26rpx;
+	color: #323232;
+}
+.item .time{
+	color: rgb(166, 166, 166);
+	font-size: 20rpx;
+	float: right;
+	margin-top: 8rpx;
+}
+.item .size{
+	display: block;
+	font-size: 22rpx;
+	margin-top: 36rpx;
+	color: rgb(166, 166, 166);
+}

@@ -1,0 +1,66 @@
+/* pages/getPrinter/getPrinter.wxss */
+
+page {
+	font-size: 24rpx;
+	color: rgb(51, 51, 51);
+}
+
+.printer {
+  background: rgb(255, 255, 255);
+}
+
+.printer .item {
+  display: table;
+  width: 100%;
+  border-bottom: 1rpx solid rgb(245, 245, 245);
+}
+.printer .item:last-child {
+  border-bottom: 0rpx none;
+}
+
+.item > view {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.item image {
+  width: 32rpx;
+  height: 41rpx;
+  margin: 0rpx 30rpx;
+}
+
+.item text {
+  display: block;
+  margin: 36rpx 30rpx 36rpx 0rpx;
+  line-height: 41rpx;  
+}
+
+.btn {
+  display: block;
+  height: 78rpx;
+  line-height: 78rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  background: rgb(255, 255, 255);
+  border: 1rpx solid rgb(235, 235, 235);
+  border-radius: 10rpx;
+}
+
+.find_btn {
+  margin-top: 50rpx;
+}
+
+.find_btn .btn {
+  width: 600rpx;
+  margin: 0rpx auto;
+  font-weight: 700;
+}
+
+.no{
+	text-align: center;
+	height: 500rpx;
+	line-height: 500rpx;
+	font-size: 18px;
+	color: #cccccc
+}

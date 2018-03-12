@@ -1,0 +1,70 @@
+/* pages/bindPhone/bindPhone.wxss */
+.bindPhone-box{
+	padding: 0 37px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.bindPhone-box .phoneInput{
+	width: 100%;
+	height: 53px;
+	border-bottom: 1px solid rgb(217, 217, 217);
+	font-size: 13px;
+	position: relative;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+.bindPhone-box .phoneInput input{
+	width:100%;
+	height: 100%;
+	z-index: 1
+}
+.bindPhone-box .phoneInput>button{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	position:absolute;
+	right:0;
+	font-size:13px;
+	color: white;
+	border: none;
+	bottom: 5px;
+	z-index: 10;
+}
+.bindPhone-box>button{
+	widows: 100%;
+	height: 40px;
+	background: rgb(240, 91, 71);
+	margin-top: 35px;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.bind{
+	width: 100%;
+	text-align: center;
+	font-size: 30rpx;
+	padding-top: 160rpx;
+	box-sizing: border-box
+}
+.bind button{
+	width: 92%;
+	background: #1aad16;
+	color: white;
+	border-radius: 12rpx;
+	vertical-align: middle;
+}
+.bind button image{
+	width: 50rpx;
+	height: 50rpx;
+	vertical-align: middle;
+}
+.bind view{
+	height: 120rpx;
+	line-height: 120rpx;
+	color: #72ACE3
+}
+
+.isShow{
+	display: none
+}

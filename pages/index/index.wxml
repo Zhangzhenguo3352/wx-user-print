@@ -1,0 +1,85 @@
+
+
+<view class="listBoxIndex">
+  <!--index.wxml-->
+ <view class='header'>
+        <image class='people' bindtap='linkMy' src='../../image/iconTitle.png'></image>
+        我的文档
+        <image class='upfile' bindtap='linkFileUpload' src='../../image/upfile.png'></image>
+</view>
+<!--点击图标看图  -->
+ <view animation="{{animationData}}" class="modelImage">
+      <image src="{{modelImageSrc}}" class="box" catchtap="clearImage" />
+  </view>
+
+<view class='content' style='height:{{winHeight}}px'>
+
+  <view scroll-y='{{scrollY}}' class='msg-list' bindscroll='onScroll'>
+    <!--数据为空的设置  -->
+     <view class='null'  wx:if="{{dataList.length===0}}">
+        打印列表为空，快去添加打印吧！
+    </view>
+
+      <view  wx:for="{{dataList}}" disabled="{{true}}" wx:key="{{index}}" class='list-item msg-item' animation='{{item.wrapAnimation}}' style='{{item.txtStyle}}' >
+          <!--上传完成  -->
+
+          <view wx:if="{{item.state == 2 }}">
+
+            <view id='{{item.id}}' data-userFileId='{{item.userFileId}}' class='msg info' animation='{{item.animation}}' bindtouchstart='onTouchStart' bindtouchmove='onTouchMove' bindtouchend='onTouchEnd' bindlongpress='longTap' data-content="是否删除该文档">
+
+                  <view class='iconBox' >
+                    <view class='icon' wx:if="{{item.fileTypeIsImag }}" >
+                      <image src='{{item.image}}' catchtap='clickImag' data-id="{{index}}"  data-index="{{index}}" bindload="cusImageLoad" style="width:{{item.imageWidth}}rpx;height:{{item.imageHeight}}rpx"></image>
+                    </view>
+                    <view class='icon' wx:else>
+                      <image src='{{item.image}}' data-id="{{index}} " data-index="{{index}}"  bindload="cusImageLoad" style="width:78rpx;height:101rpx"></image>
+                    </view>
+                  </view>
+
+                <view class='text'>
+
+                  <view class='name'>{{item.title}}</view>
+                  <view class='time'>{{item.create_time == 0 ? '-- --' : item.create_time}}<text>{{item.size}} KB</text></view>
+                </view>
+                <view class='add' catchtap='addWord' data-id='{{item.uf_id}}'>
+                  <image src='/image/add.png'></image>
+                </view>
+            </view>
+            <view class='msg-menu'>
+                <view id='{{item.id}}' data-userFileId='{{item.userFileId}}' class='menu-delete' bindtap='delWord' bindlongtap='onDeleteMsgLongtap'>
+                    删除
+                </view>
+            </view>
+          </view>
+          <!--正在上传  -->
+          <view wx:elif="{{item.state == 1 }}">
+            <view class='msg info bjCCC' >
+                <view percent="{{item.progress}}" class="float progress" stroke-width="64" style="width:{{item.progress}}%"/>
+                <view class='icon'>
+                  <image src='{{item.image}}' catchtap='clickImag' data-id="{{index}}"></image>
+                </view>
+                <view class='text'>
+
+                  <view class='name'>{{item.title}}</view>
+                  <view class='time'>{{item.create_time == 0 ? '-- --' : item.create_time}}<text>{{item.size}} KB</text></view>
+                </view>
+
+            </view>
+          </view>
+          <!--没有上传的图片 判断  -->
+          <view wx:else></view>
+      </view>
+  </view>
+
+
+
+
+</view>
+
+<view class='setting'>
+        <text>选择了 {{count}} 份文件 </text>
+        <view class='print' bindtap='linkNotPrint'>打印设置 ></view>
+</view>
+
+
+</view>

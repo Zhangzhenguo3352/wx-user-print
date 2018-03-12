@@ -1,0 +1,59 @@
+<!--pages/printSet/printSet.wxml-->
+
+<view class='printer'>
+        <view class='print_num'>
+                <view class='title'>
+                        <text>打印份数</text>
+                </view>
+                <view class='item_box'>
+                        <view class='printNum'>
+                                <image bindtap='reduceNum' id='minusBtn' src='../../image/minus_grey.png'></image>
+                                {{num}}
+                                <image bindtap='addNum' id='plusBtn' src='../../image/plus.png'></image>
+                        </view>
+                </view>
+        </view>
+        <view>
+                <view class='title'>
+                        <text>纸张类型</text>
+                </view>
+                <view class='item_box'>
+                        <text  bindtap='selectType' data-paper='A4' class="{{paper=='A4'?'active':''}} item">A4纸</text>
+                        <text class='item' bindtap='selectType' data-paper='1寸' class="{{paper=='1寸'?'active':''}} item">1寸照片</text>
+                        <text class='item' bindtap='selectType' data-paper='2寸' class="{{paper=='2寸'?'active':''}} item">2寸照片</text>
+                        <text class='item' bindtap='selectType' data-paper='7寸' class="{{paper=='7寸'?'active':''}} item">7寸照片</text>
+                </view>
+        </view>
+        <view>
+                <view class='title'>
+                        <text>单面双面</text>
+                </view>
+                <view class='item_box'>
+                        <text class="{{side=='单面'?'active':''}} item" bindtap='selectDS' data-side='单面'>单面</text>
+                        <text class="{{side=='双面'?'active':''}} item" bindtap='selectDS' data-side='双面'>双面</text>
+                </view>
+        </view>
+        <view>
+                <view class='title'>
+                        <text>颜色</text>
+                </view>
+                <view class='item_box'>
+                        <text class="{{color=='黑白'?'active':''}} item" bindtap='selectColor' data-color='黑白'>黑色</text>
+                        <text class="{{color=='彩色'?'active':''}} item" bindtap='selectColor' data-color='彩色'>彩色</text>
+                </view>
+        </view>
+        <view class='page_num'>
+                <view class='title'>
+                        <text>页码范围</text>
+                </view>
+                <view class='item_box'>
+                        <input id='startPage' type='text' value='{{start_page}}' bindinput='starPage'></input>
+                        <text>至</text>
+                        <input id='startPage' type='text' value='{{end_page}}' bindinput='endPage'></input>
+                </view>
+        </view>
+</view>
+
+<view class='confirm_btn'>
+        <text class='btn' bindtap='linkNotPrint' bindtap='modifySetting'>确认</text>
+</view>

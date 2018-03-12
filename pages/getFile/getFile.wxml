@@ -1,0 +1,4 @@
+<!--pages/getFile/getFile.wxml-->
+<view>
+	<button bindtap='scanCode'>取件付款</button>
+</view>

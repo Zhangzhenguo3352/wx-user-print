@@ -1,0 +1,37 @@
+<!--pages/printPay/printPay.wxml-->
+<view class='printOrder'>
+    <view class='item'>
+        订单编号：
+        <text>{{info.sn}}</text>
+    </view>
+</view>
+
+<view class='printRecord'>
+    <view class='item' wx:for="{{list}}">
+        <text class='name'>{{item.title}}(共{{pages}}页)</text>
+        <text class='price'>{{item.total_price}}元</text>
+        <text class='printAttr'>{{item.attr_str}}</text>
+        <text class='copyNum'>{{item.num}}份</text>
+    </view>
+    <view class='item'>
+        <text class='totalPrice'>合计：<text>{{info.total_money}}元</text></text>
+    </view>
+</view>
+
+<!-- 余额不足不足时，“.accountError”显示，“.accountInfo”隐藏( style='display:none;')，同时“.payBtn”添加class“ payDisabled” -->
+<view class='footer'>
+    <view class='accountInfo' wx:if='{{!noShow}}'>
+        <image src='../../image/checked.png'></image>
+        使用余额 (
+        <text>{{userInfo}}元</text>)
+        <!-- ：<text>0.00元</text> -->
+    </view>
+    <view class='accountError'  bindtap='linkRecharge' wx:if='{{noShow}}'>
+        <text>账户余额不足，请充值</text>
+        <image src='../../image/rightArrow.png'></image>
+    </view>
+    <view class='payBtn'>
+        <text>支付金额：{{info.total_money}}元</text>
+        <text bindtap='linkPrintPayOk'>立即支付</text>
+    </view>
+</view>

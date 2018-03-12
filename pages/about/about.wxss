@@ -1,0 +1,13 @@
+/* pages/about/about.wxss */
+.aboutText{
+	width: 100%;
+	height: auto;
+}
+.aboutText  view{
+	background: rgb(247, 247, 247);
+	color: rgb(37, 37, 37);
+	font-size: 13px;
+	line-height: 26px;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+}

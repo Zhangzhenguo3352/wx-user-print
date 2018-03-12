@@ -1,0 +1,343 @@
+/**index.wxss**/
+
+.listBoxIndex{
+  position: relative;
+  
+}
+.header {
+        height: 90rpx;
+        font-size: 30rpx;
+        text-align: center;
+        color: rgb(51, 51, 51);
+        background: white;
+        z-index: 11;
+        border-bottom: 1px solid rgb(245, 245, 245);
+        padding: 12px 15px 0 17px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+
+}
+
+.header image {
+        width: 20px;
+        height: 20px;
+}
+
+.header>.people {
+        float: left;
+}
+
+.header>.upfile {
+        float: right;
+}
+
+.content {
+        padding-bottom: 80rpx;
+         padding-top: 90rpx; 
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+}
+
+.content scroll-view {
+        height: 100%;
+}
+
+.setting {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 80rpx;
+        background: white;
+        padding-left: 15px;
+        font-size: 12px;
+        line-height: 80rpx;
+        z-index: 10;
+}
+
+.setting .print {
+        height: 100%;
+        float: right;
+        background: rgb(240, 91, 71);
+        color: white;
+        width: 95px;
+        text-align: center;
+}
+
+.list-item {
+        width: 100%;
+        line-height: 1;
+        height: 128rpx;
+        border-bottom: 1px solid rgb(245, 245, 245);
+        position: relative;
+}
+
+.list-item .info {
+        /* width: 100%; */
+        /* height: 100%; */
+        box-sizing: border-box;
+        padding: 0rpx 0rpx 0rpx 0rpx;
+}
+
+.list-item .info>view {
+        display: inline-block;
+        float: left;
+}
+
+.list-item .info .icon {
+        height: 100%;
+        width: 134rpx;
+        position: relative;
+
+}
+
+.list-item .info .icon image {
+        width: 100%;
+        height: 100%;
+       
+}
+.icon image{
+  /* margin-top:7px; */
+   margin-left:10px; 
+   position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+}
+.list-item .info .iconBox {
+        height: 100%;
+        width: 134rpx;
+        position: relative;
+        z-index: 202;
+}
+
+.list-item .info .icon image {
+        width: 100%;
+        height: 100%;
+}
+
+.list-item .info .text {
+        height: 100%;
+        float: left;
+        margin-left: 30rpx;
+        padding-top: 8rpx;
+        box-sizing: border-box;
+        width: 76%;
+        position: absolute;
+        z-index: 201;
+}
+
+.list-item .info .text .name {
+        font-size: 32rpx;
+        color: rgb(51, 51, 51);
+        overflow: hidden;
+        width: 90%;
+        text-overflow: ellipsis;
+        height: 40rpx;
+        margin-top: 20rpx;
+}
+
+.list-item .info .text .time {
+        font-size: 28rpx;
+        color: rgb(166, 166, 166);
+        margin-top: 20rpx;
+        position: absolute;
+        z-index: 202;
+}
+
+.list-item .info .text .time text {
+        margin-left: 40rpx;
+}
+
+
+
+.list-item .info .add {
+        float: right;
+        height: 100%;
+        width: 38rpx;
+        padding: 25rpx 0;
+        margin-right: 40rpx;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 202;
+}
+.list-item .info .abort {
+        float: right;
+        height: 100%;
+        width: 38rpx;
+        padding: 25rpx 0;
+        box-sizing: border-box;
+        position: relative;
+}
+
+.list-item .info .add image {
+        width: 38rpx;
+        height: 38rpx;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+}
+.list-item .info .abort image {
+        width: 38rpx;
+        height: 38rpx;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+
+}
+
+.list-item .delete {
+        font-size: 24rpx;
+        background: red;
+        text-align: center;
+        color: white;
+        line-height: 128rpx;
+        height: 100%;
+        position: absolute;
+        top: 0;
+}
+
+
+.msg-list {
+  margin-bottom: 40px;
+}
+
+.msg-item {
+    width: 100%;
+    height: 150rpx;
+    border-bottom: 1rpx solid rgb(233, 233, 233);
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.msg {
+    position: absolute;
+    width: 100%;
+    height: 150rpx;
+    left: 0;
+    top: 0;
+    z-index: 100;
+     background-color: #fff; 
+}
+.rotate45{
+  transform: rotate(45deg);
+}
+.bjCCC{
+  background-color: #f7f7f7;
+}
+.header-img {
+    position: absolute;
+    width: 110rpx;
+    height: 110rpx;
+    left: 20rpx;
+    top: 20rpx;
+    border-radius: 50%;
+    
+}
+
+.user-name {
+    position: absolute;
+    left: 150rpx;
+    top: 20rpx;
+}
+
+.msg-text {
+    position: absolute;
+    left: 150rpx;
+    bottom: 20rpx;
+    font-size: 80%;
+    color: rgb(127, 127, 127);
+}
+
+.msg-menu {
+    position: absolute;
+    width: 100%;
+    height: 150rpx;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.menu-delete {
+    position: absolute;
+    width: 150rpx;
+    height: 148rpx;
+    top: 1rpx;
+    right: 0;
+    background-color: rgb(255, 58, 50);
+    color: #fff;
+    text-align: center;
+    line-height: 150rpx;
+}
+
+.menu-mark {
+    position: absolute;
+    width: 200rpx;
+    height: 148rpx;
+    top: 1rpx;
+    right: 150rpx;
+    background-color: rgb(200, 199, 205);
+    color: #fff;
+    text-align: center;
+    line-height: 150rpx;
+}
+.progressBox{
+  display: flex;
+  padding-bottom: 10rpx;
+}
+.progressBox .float{
+  flex: 1;
+  
+}
+.progress{
+  position: absolute;
+   z-index: 100; 
+  height:64px;
+  flex:1;
+  background: rgba(32, 230, 49, .5);
+
+
+}
+.progressBox .right{
+  width: 120rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+.modelImage{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(14, 14, 14, 0.5);
+  top:0;
+  left:0;
+  z-index: 100;
+  opacity: 0;
+  transform: scale(0);
+  display: flex;
+  align-items:center;
+  justify-content: center;        
+}
+.modelImage .box{
+  width: 100%;
+}
+.null{
+    height: 300rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #cccccc;
+    line-height: 700rpx;
+}
+.null button{
+    width: 60%;
+}

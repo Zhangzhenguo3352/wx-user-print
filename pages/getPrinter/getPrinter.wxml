@@ -1,0 +1,18 @@
+<!--pages/getPrinter/getPrinter.wxml-->
+
+<view class='printer' wx:if="{{list.length>0}}">
+        <view class='item' bindtap='linkNotPrint' wx:for="{{list}}">
+                <view>
+                        <image src='../../image/dingwei_red.png'></image>
+                </view>
+                <view>
+                        <text>{{printer_address}}</text>
+                </view>
+        </view>
+</view>
+<view class='no' wx:if="{{list.length==0}}">
+附近没有找到打印机
+</view>
+<view class='find_btn'>
+        <text class='btn'>查找更多打印机</text>
+</view>
